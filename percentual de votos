@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int totalEleitores, brancos, nulos, validos;
+
+        Console.Write("Total de eleitores: ");
+        totalEleitores = int.Parse(Console.ReadLine());
+
+        Console.Write("Votos brancos: ");
+        brancos = int.Parse(Console.ReadLine());
+
+        Console.Write("Votos nulos: ");
+        nulos = int.Parse(Console.ReadLine());
+
+        Console.Write("Votos válidos: ");
+        validos = int.Parse(Console.ReadLine());
+
+        double pBrancos = (brancos * 100.0) / totalEleitores;
+        double pNulos = (nulos * 100.0) / totalEleitores;
+        double pValidos = (validos * 100.0) / totalEleitores;
+
+        Console.WriteLine($"Brancos: {pBrancos}%");
+        Console.WriteLine($"Nulos: {pNulos}%");
+        Console.WriteLine($"Válidos: {pValidos}%");
+    }
+}
