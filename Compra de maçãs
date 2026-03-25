@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int quantidade;
+        double preco, total;
+
+        Console.Write("Quantidade de maçãs: ");
+        quantidade = int.Parse(Console.ReadLine());
+
+        if (quantidade < 12)
+            preco = 1.30;
+        else
+            preco = 1.00;
+
+        total = quantidade * preco;
+
+        Console.WriteLine($"Total da compra: R$ {total}");
+    }
+}
