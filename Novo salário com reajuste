@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double salario, percentual;
+
+        Console.Write("Salário atual: ");
+        salario = double.Parse(Console.ReadLine());
+
+        Console.Write("Percentual de reajuste (%): ");
+        percentual = double.Parse(Console.ReadLine());
+
+        double novoSalario = salario + (salario * percentual / 100);
+
+        Console.WriteLine($"Novo salário: R$ {novoSalario}");
+    }
+}
